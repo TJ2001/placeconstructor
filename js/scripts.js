@@ -10,16 +10,19 @@ function Place (name, location, landmarks, visit, notes) {
 
 //User Logic
 $(function(){
-
-  $("button.addInput").click(function(){
-    $("#addLandmarks").append("<input type='text' class='form-control' id='new-landmarks'>");
-  });
+  // var landmarksArray = [];
+  // $("button.addInput").click(function(){
+  //   // $("#addLandmarks").append("<input type='text' class='form-control' id='new-landmarks'>");
+  //   // $(landmarksArray).push($("#addLandmarks input").val());
+  //   // console.log($("#addLandmarks input").val());
+  //   // console.log(landmarksArray);
+  // });
   $("form").submit(function(event){
     event.preventDefault();
 
     var inputtedPlace = $("#new-place-name").val();
     var inputtedLocation = $("#new-location").val();
-    var inputtedLandmarks = $("#new-landmarks").val();
+    var inputtedLandmarks = $(".new-landmarks").val();
     var inputtedLastVisit = $("#new-last-visit").val();
     var inputtedNotes = $("#new-notes").val();
 
