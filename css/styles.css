@@ -1,0 +1,20 @@
+#show-place {
+  display: none;
+}
+
+.places li {
+  cursor: pointer;
+  color: #0088cc;
+}
+
+.places li:hover {
+  text-decoration: underline;
+}
+
+.col-md-6 {
+  float:left;
+}
+
+#new-landmarks {
+  margin-bottom: 1vh;
+}
